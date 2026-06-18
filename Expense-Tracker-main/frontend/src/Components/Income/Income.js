@@ -8,11 +8,12 @@ import { dollar } from '../../utils/Icons';
 
 
 function Income() {
-    const {addIncome,incomes, getIncomes, deleteIncome, totalIncome} = useGlobalContext()
+        const { incomes, getIncomes, deleteIncome, totalIncome } = useGlobalContext();
 
-    useEffect(() =>{
-        getIncomes()
-    }, [])
+    useEffect(() => {
+        getIncomes();
+        // eslint-disable-next-line
+    }, []);
     return (
         <IncomeStyled>
             <InnerLayout>
